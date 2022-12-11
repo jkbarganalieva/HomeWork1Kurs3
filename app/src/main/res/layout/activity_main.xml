@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/edit_text"
+        android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableTintMode="add"
+        android:hint="Введите почту"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <EditText
+        android:id="@+id/et_theme"
+        app:layout_constraintTop_toBottomOf="@id/et_mail"
+        android:layout_marginTop="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/ic_baseline"
+        android:drawableTintMode="add"
+        android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:hint="Введите тему"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/et_massage"
+        app:layout_constraintTop_toBottomOf="@id/et_theme"
+        android:layout_marginTop="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_more"
+        android:drawableTintMode="add"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:background="@drawable/edit_text"
+        android:backgroundTint="@color/white"
+        android:hint="Введите сообщение"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
